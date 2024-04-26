@@ -24,6 +24,10 @@ module.exports = {
   // Base config
   extends: ["eslint:recommended"],
 
+  rules: {
+    "react/no-unknown-property": ["error", { ignore: ["jsx"] }],
+  },
+
   overrides: [
     // React
     {
